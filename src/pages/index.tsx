@@ -5,6 +5,7 @@ import { api } from "../services/api";
 import { Header } from "../components/Header";
 import { Slides } from "../components/Slides";
 import { Banner } from "../components/Banner";
+import { TravelTypes } from "../components/TravelTypes";
 
 type SlideItemProps = {
   id: number;
@@ -38,6 +39,7 @@ export default function Home() {
       </Head>
       <Header />
       <Banner />
+      <TravelTypes />
       <Slides continents={continents} />
     </>
   );

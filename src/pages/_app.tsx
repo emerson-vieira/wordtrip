@@ -1,5 +1,13 @@
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+import { AppProps } from "next/app";
+
+import { Chakra } from "../context/Chakra";
+
+export default function MyApp({ Component, pageProps }: AppProps) {
+  return (
+    <Chakra cookies={pageProps.cookies}>
+      <Component {...pageProps} />
+    </Chakra>
+  );
 }
 
-export default MyApp;
+export { getServeSideProps } from "../context/Chakra";

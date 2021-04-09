@@ -1,5 +1,13 @@
+import Head from "next/head";
 import { Header } from "../components/Header";
 
 export default function Home() {
-  return <Header />;
+  return (
+    <>
+      <Head>
+        <title>Wordtrip | Home</title>
+      </Head>
+      <Header />
+    </>
+  );
 }

@@ -9,8 +9,8 @@ const theme = extendTheme({
       500: "#FFBA08",
     },
     brand: {
+      10: "rgba(153, 153, 153, 0.5)",
       50: "#FFFFFF",
-      100: "#F5F8FA",
       200: "#F5F8FA",
       500: "#999999",
       700: "#47585B",
@@ -52,7 +52,7 @@ const theme = extendTheme({
   },
 });
 
-const overRides = extendTheme({
+const overrides = extendTheme({
   styles: {
     global: (props) => ({
       body: {

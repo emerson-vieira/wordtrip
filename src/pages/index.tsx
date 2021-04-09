@@ -4,6 +4,7 @@ import { api } from "../services/api";
 
 import { Header } from "../components/Header";
 import { Slides } from "../components/Slides";
+import { Banner } from "../components/Banner";
 
 type SlideItemProps = {
   id: number;
@@ -23,7 +24,6 @@ export default function Home() {
   useEffect(() => {
     async function loadContinents() {
       api.get("/continents").then((response) => {
-        console.log(response.data);
         setContinents(response.data);
       });
     }
@@ -37,6 +37,7 @@ export default function Home() {
         <title>Wordtrip | Home</title>
       </Head>
       <Header />
+      <Banner />
       <Slides continents={continents} />
     </>
   );

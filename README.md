@@ -38,7 +38,7 @@ Clone the project and access the folder
 ## ✨ Step 1
 
 ```bash
-$ git clone git@github.com:eduardoluizdev/worldtrip.git && cd ignite-nextjs-blog
+$ git clone https://github.com/emerson-vieira/wordtrip.git && cd wordtrip
 ```
 
 ## ✨ Step 2
@@ -66,4 +66,4 @@ This project is licensed under the MIT License.
 
 ---
 
-<p align="center">Made with 💜 by Eduardo Luiz</p>
+<p align="center">Made with 💜 by Emerson Vieira</p>

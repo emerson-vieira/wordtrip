@@ -143,14 +143,13 @@ export default function Continent({ continent }: ContinentProps) {
                       />
                     </IconButton>
                   </PopoverTrigger>
-
                   <PopoverContent
                     fontSize={["sm", "md"]}
                     color="brand.700"
                     borderColor="yellow.300"
                   >
                     <PopoverArrow />
-                    <PopoverCloseButton />
+                    <PopoverCloseButton marginTop="1" />
                     <PopoverBody>
                       São mais de {continent.topCities} cidades
                     </PopoverBody>
